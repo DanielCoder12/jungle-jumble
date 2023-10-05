@@ -24,10 +24,10 @@ class JumblesService {
     }
 
     createNewJumble(newJumble) {
-        console.log('he made it', newJumble);
+        // console.log('he made it', newJumble);
         const newNewJumble = new Jumble(newJumble)
         AppState.jumbles.push(newNewJumble)
-        console.log('jumbles', AppState.jumbles);
+        // console.log('jumbles', AppState.jumbles);
         AppState.emit('jumbles')
     }
 
